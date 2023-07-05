@@ -1,0 +1,42 @@
+{
+    "name": "google-chat-cards",
+    "version": "1.0.0",
+    "description": "A simple Nunjucks command-line (CLI) tool to compile and watch templates into static HTML files- with front-matter support.",
+    "author": "Christopher Eaton",
+    "repository": "github:chriseaton/google-chat-cards",
+    "bugs": {
+        "url": "https://github.com/chriseaton/google-chat-cards/issues"
+    },
+    "license": "MIT",
+    "main": "index.js",
+    "type": "module",
+    "keywords": [
+        "google",
+        "card",
+        "chat",
+        "hangouts",
+        "templates"
+    ],
+    "engines": {
+        "node": ">=14.4.0"
+    },
+    "scripts": {
+        "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --verbose --coverage",
+        "test-ci": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --verbose -ci",
+        "lint": "./node_modules/.bin/eslint ./"
+    },
+    "jest": {
+        "testEnvironment": "node",
+        "testPathIgnorePatterns": [
+            "/node_modules/"
+        ]
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.2",
+        "eslint": "^8.44.0",
+        "eslint-plugin-jest": "^27.2.2",
+        "jest": "^29.6.0",
+        "jsdoc": "^4.0.2",
+        "jsdoc-plugin-intersection": "^1.0.4"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "cardsV2": [
+        {
+            "card": {
+                "sections": [
+                    {
+                        "header": "test-section",
+                        "widgets": [
+                            {
+                                "buttonList": {
+                                    "buttons": [
+                                        {
+                                            "text": "cool button",
+                                            "onClick": {
+                                                "openLink": {
+                                                    "url": "https://github.com/chriseaton/google-chat-cards"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "header": {
+                    "title": "test"
+                }
+            }
+        }
+    ]
+}
