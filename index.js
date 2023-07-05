@@ -220,7 +220,6 @@ class GoogleChatCard {
         //check if last widget is a buttonList.
         let buttonList = null;
         if (section.widgets.length && typeof section.widgets[section.widgets.length - 1].buttonList === 'object') {
-            console.log('lolwut');
             buttonList = section.widgets[section.widgets.length - 1];
         } else {
             //create new buttonlist widget.

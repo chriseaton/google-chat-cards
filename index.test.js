@@ -14,6 +14,16 @@ describe('#constructor', () => {
     });
 });
 
+describe('#toJSON', () => {
+    it('Returns the data object of the card.', async () => {
+        let sample = new GoogleChatCard()
+            .header('test')
+            .section('test-section')
+            .button('cool button', 'https://github.com/chriseaton/google-chat-cards');
+        expect(sample.data).toEqual(sample.toJSON());
+    });
+});
+
 describe('JSON.stringify', () => {
     it('Returns the card object stringified.', async () => {
         let sample = new GoogleChatCard()
