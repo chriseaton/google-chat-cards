@@ -14,6 +14,15 @@ describe('#constructor', () => {
     });
 });
 
+describe('#reset', () => {
+    it('Resets the data object back to an initial state.', () => {
+        let sample = new GoogleChatCard().header('Test');
+        expect(sample.data).not.toEqual(new GoogleChatCard().data);
+        sample.reset();
+        expect(sample.data).toEqual(new GoogleChatCard().data);
+    });
+});
+
 describe('#toJSON', () => {
     it('Returns the data object of the card.', async () => {
         let sample = new GoogleChatCard()
