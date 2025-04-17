@@ -1,6 +1,6 @@
 {
     "name": "google-chat-cards",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Unofficial helper package to quickly build Google Chat v2 Cards for Google Chat API and webhooks.",
     "author": "Christopher Eaton",
     "repository": "github:chriseaton/google-chat-cards",
