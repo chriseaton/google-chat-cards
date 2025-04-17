@@ -250,6 +250,19 @@ class GoogleChatCard {
     }
 
     /**
+     * Adds a simple message above the card. This can only be specificied once per card (chat message), so any
+     * subsequent calls will overwrite the previous message.
+     * 
+     * This text allows you to include mentions for users in the format of `<users/userId>`, where `userId` is the
+     * Google Chat user ID. This will send a notification to the mentioned user from the space.
+     * @param {String} simpleMessage - The simple message to be displayed above the card.
+     */
+    text(simpleMessage) {
+        this.data.text = simpleMessage;
+        return this;
+    }
+
+    /**
      * Resets the card back to it's original (blank) configuration. All widgets, headers, etc. are cleared.
      * @returns {GoogleChatCard}
      */
